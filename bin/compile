@@ -56,7 +56,8 @@ chmod +x $build_dir/vendor/node/bin/*
 PATH=$PATH:$build_dir/vendor/node/bin
 
 # Update npm to newer version
-npm update npm@2.x.x -g
+status "Updating npm"
+npm install npm -g
 npm --version
 
 # Run subsequent node/npm commands from the build path
